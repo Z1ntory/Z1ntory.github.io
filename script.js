@@ -4,7 +4,7 @@ let secretWord, attempts;
 function startGame() {
     secretWord = words[Math.floor(Math.random() * words.length)]; // Random word selection
     attempts = 5; // Set max attempts
-    document.getElementById("hint").textContent = `Hint: The word starts with '${secretWord.charAt(0).toUpperCase()}'`;
+    document.getElementById("hint").textContent = `Hint: The Fruit starts with '${secretWord.charAt(0).toUpperCase()}'`;
     document.getElementById("message").textContent = "";
     document.getElementById("playAgain").style.display = "none";
     console.log("Secret word (for testing):", secretWord); 
